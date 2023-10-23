@@ -23,7 +23,7 @@ body {
     margin-inline: auto;
     border: 5px solid;    
     background-color: var(--alternative);
-    position: relative;
+  
 }
 .container::after {
     content: "";
@@ -38,7 +38,8 @@ body {
 }
  
 .item {
-    width: 4rem;
+    width: rem;
+
 }
 .item > img{
     width: 100%;
@@ -135,20 +136,6 @@ img {
     height: 200px;
 
 }
-/*Trading hours *
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-.container h2{
-    text-align: center;
-    font-size: x-large;
-    color: floralwhite;
-    background-color: grey;
-}*/
 
 /*index page */
  .topnav {
@@ -157,12 +144,16 @@ img {
 }
 
 .topnav a {
-  float: left;
+  width: 500px;
+  height: auto;
+  float: top;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 25px;
+  margin: 0;
+  padding: 100px 50px;
   text-decoration: none;
   font-size: 45px;
+  position: sticky;
 }
 .navbar {
     background-color: darkgoldenrod;
@@ -170,9 +161,53 @@ display: block;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f2f2f2;
   color: black;
 }
 .nav bar {
-    position: sticky;
+    position: absolute;
 }
+
+/*checkout box*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*checkout page*/
+body{
+ margin: 0;
+ padding: 0;
+ background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Cart-Container{
+ width: 70%;
+ height: 85%;
+ background-color: #ffffff;
+ border-radius: 20px;
+ box-shadow: 0px 25px 40px #1687d933;
+}
+
