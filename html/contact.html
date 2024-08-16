@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../css/style.css">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Nathalie's Musical Instruments</title>
 </head>
+
 <body>
-   <form action="action_page.php">
-    <div class="topnav">
-        <nav class="nav bar">
-        <a href="../html/index.html">Home</a>
-        <a href="./html/product.html">Product</a>
-        <a href="../html/contact.html">Contact</a>
-        <a href="../html/tradinghours.html">Trading Hours</a>
-        <a class="active" href="../html/about.html">About</a>
-        <a href="../html/admin.html">Admin</a>
-
-  </nav>
-</div>
-  <body background="https://i.postimg.cc/QtnL7Gz0/backgroundproduct.png">
+  <div class="topnav">
+    <nav class="nav-bar">
+      <a class="active" href="./index.html">Home</a>
+      <a href="../html/about.html">About</a>
+      <a href="../html/product.html">Product</a>
+      <a href="../html/contact.html">Contact</a>
+      <a href="../html/tradinghours.html">Trading Hours</a>
+      <a href="../html/admin.html">Admin</a>
+    </nav>
+  </div>
   <div class="container">
-  <form action="action_page.php">
+    <h1>Nathalie's Musical Instruments</h1>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <form action="action_page.php" class="contact-form">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="southafrica">South Africa</option>
-      <option value="durban">Durban</option>
-      <option value="johannesburg">Johannesburg</option>
-    </select>
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="southafrica">South Africa</option>
+        <option value="durban">Durban</option>
+        <option value="johannesburg">Johannesburg</option>
+      </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-    
-</>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+     
+</body>
 </html>
+ 
